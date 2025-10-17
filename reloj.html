@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reloj </title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #a8dadc, #457b9d); 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #f1faee;
+        }
+        
+        hr {
+            position: absolute;
+            top: 80px;
+            width: 100px;
+            border-color: #f1faee;
+        }
+        canvas {
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3), 
+                        0 0 0 10px rgba(255,255,255,0.1); 
+            border-radius: 50%; 
+            background-color: transparent !important; 
+        }
+    </style>
+</head>
+<body>
+    
+    <hr />
+    <canvas id="canvas" width="400" height="400"></canvas>
+    
+    <script type="text/javascript" src="js/clock.js" defer></script> 
+</body>
+</html>
