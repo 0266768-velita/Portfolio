@@ -1,6 +1,4 @@
-/* ======================================
- * GENERAL STYLES AND RESET
- * ====================================== */
+
 * {
     margin:0;
     padding:0;
@@ -12,24 +10,23 @@ body {
     color: rgba(0,0,0,0.85);
     line-height:1.7;
     overflow-x:hidden;
-    /* 🔹 Background gradient */
+  
     background: linear-gradient(to bottom, #f3ebe6, #fefefe);
 }
 
-/* 🔹 PRIMARY BUTTON STYLES (for search, etc.) */
-/* Esta clase define el estilo del botón 'My Favorite Spots' (color #D8C4B8) */
+
 .btn-primary-action,
 nav.navbar form button.btn {
-    background-color: #D8C4B8; /* Color de fondo */
+    background-color: #D8C4B8; 
     color: white;
     font-weight: 600;
     border-radius: 12px;
     padding: 8px 18px;
     cursor: pointer;
-    box-shadow: 0 3px 0 rgba(0, 0, 0, 0.2); /* Sombra consistente */
+    box-shadow: 0 3px 0 rgba(0, 0, 0, 0.2); 
     transition: all 0.1s ease-in-out;
     position: relative;
-    border: none; /* Asegura que no tenga borde */
+    border: none; 
     text-decoration: none;
     display: inline-block;
     text-align: center;
@@ -37,12 +34,11 @@ nav.navbar form button.btn {
 .btn-primary-action:hover,
 nav.navbar form button.btn:hover {
     background-color: #C7B0A5;
-    color: white; /* Asegura que el texto siga siendo blanco */
+    color: white; 
     transform: translateY(-1px);
 }
 
-/* 🔹 Button press effect (Applied to all buttons/btns) - GENERALIZED */
-/* Ahora aplicando el 'press' effect a todos los botones */
+
 button,
 .btn-primary-action,
 .btn,
@@ -50,14 +46,10 @@ nav.navbar button,
 nav.navbar .nav-link-button {
     transition: all 0.1s ease-in-out;
     position: relative;
-    /* QUITADO: box-shadow: 0 4px 0 rgba(0, 0, 0, 0.2); de los botones generales para evitar conflictos */
+    
 }
 
-/* Aplicar la sombra base a los botones que la necesiten, si no usan .btn-primary-action */
-/* Por ejemplo, si tienes un <button> simple que quieres con sombra, deberías darle una clase.
-   Pero si te referías al borde de los botones de navegación, eso ya se maneja abajo. */
 
-/* El efecto de "presión" consistente */
 button:active,
 .btn:active,
 .btn-primary-action:active,
@@ -68,14 +60,11 @@ nav.navbar .nav-link-button:active {
 }
 
 
-/* ======================================
- * HEADER AND NAVIGATION
- * ====================================== */
 
-/* --- MAIN HEADER (Personal Info) --- */
+/* MAIN */
 header {
     position: relative;
-    /* Reduced to make space for the navbar */
+  
     min-height: calc(100vh - 100px);
     display:flex;
     flex-direction:column;
@@ -83,7 +72,7 @@ header {
     justify-content:center;
     text-align:center;
     background: linear-gradient(180deg, #D8C4B8 0%, #F9F3EF 100%);
-    /* Bottom padding for the nav */
+ 
     padding:20px 20px 120px 20px;
 }
 
@@ -117,7 +106,7 @@ header blockquote {
     margin-top:15px;
 }
 
-/* --- Navigation Buttons/Navbar --- */
+/* Navigation   */
 nav.navbar {
     position:absolute;
     bottom:0;
@@ -128,22 +117,21 @@ nav.navbar {
     box-shadow: 0 -5px 15px rgba(0,0,0,0.05);
 }
 
-/* Estilos específicos para los botones/enlaces de navegación (LIGEROS/TRANSPARENTES) */
+
 nav.navbar button,
 nav.navbar .nav-link-button {
-    background: rgba(255,255,255,0.8); /* Fondo claro y semitransparente */
+    background: rgba(255,255,255,0.8); 
     backdrop-filter: none;
     border-radius:12px;
     padding:8px 18px;
-    color: rgba(0,0,0,0.85); /* Texto oscuro */
+    color: rgba(0,0,0,0.85); 
     font-weight:600;
     font-size:0.9rem;
     cursor:pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1); /* Sombra más sutil */
-    border: none; /* <--- AQUÍ: Eliminado el borde para estos botones */
+    box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1); 
+    border: none; 
 
-    /* ESTILOS DE ENLACE para verse como botón */
     text-decoration: none;
     display: inline-block;
     text-align: center;
@@ -151,13 +139,13 @@ nav.navbar .nav-link-button {
 
 nav.navbar button:hover,
 nav.navbar .nav-link-button:hover {
-    background: rgba(0,0,0,0.1); /* Hover a gris claro */
+    background: rgba(0,0,0,0.1);
     color: rgba(0,0,0,1);
     transform: translateY(-1px);
 }
 
 
-/* Style for the search input field */
+
 nav.navbar form input.form-control {
     border-radius: 12px;
     border: 1px solid rgba(0,0,0,0.2);
@@ -166,23 +154,21 @@ nav.navbar form input.form-control {
     padding: 8px 12px;
 }
 
-/* ======================================
- * HERO BANNER (VISUAL COVER)
- * ====================================== */
+
 #hero-banner {
     background: linear-gradient(135deg, #F9F3EF 0%, #E0D3C7 100%);
     text-align: center;
     padding: 80px 20px;
 }
 
-/* AJUSTE CLAVE: Aplicamos el estilo de tamaño grande SOLO a los h2. */
+
 #hero-banner h2 {
     font-family:'Playfair Display', serif;
     font-weight: 700;
     font-size: 2.5rem;
 }
 
-/* Estilo de h4 simplificado */
+
 #hero-banner h4 {
     font-family:'Playfair Display', serif;
     font-weight: 700;
@@ -205,9 +191,7 @@ nav.navbar form input.form-control {
     transform: translateY(-5px) scale(1.01);
 }
 
-/* ======================================
- * BUBBLES ANIMATION
- * ====================================== */
+/* BUBBLES ANIMATION*/
 .bubbles {
     position: absolute;
     top: 0;
@@ -235,9 +219,6 @@ nav.navbar form input.form-control {
     100% { transform: translateY(-1200px) translateX(50px); opacity:0;}
 }
 
-/* ======================================
- * CONTENT SECTIONS (MAIN)
- * ====================================== */
 section {
     padding:80px 20px;
     max-width:1000px;
@@ -256,7 +237,7 @@ section h2 {
     color: rgba(0,0,0,0.9);
 }
 
-/* --- Fade-In Animation --- */
+
 .fade-in {
     opacity:0;
     transform: translateY(30px);
@@ -267,7 +248,7 @@ section h2 {
     transform: translateY(0);
 }
 
-/* --- Images in Sections (General) --- */
+/*  Images  */
 section img {
     width: 100%;
     max-width: 100px !important;
@@ -283,42 +264,33 @@ section img:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
-/* ====================================== 
- * HOBBIES/MEDIA CARDS 
- * (Ajuste para flechas de carrusel en la sección de Hobbies)
- * ====================================== */
-
-/* --- Movies Carousel Customization (If used in Hobbies) --- */
+/* HOBBIES/MEDIA CARDS */
 #hobbies .carousel-item img {
     max-width: 250px !important; 
     height: auto;
     border-radius: 15px;
 }
 
-/* 🔹 ESTILOS DE FLECHAS TENUES PARA EL CARRUSEL DE PELÍCULAS 🎬 */
+/* flechas*/
 
-/* 1. Cambiar el color del icono de la flecha a un gris claro/tenue (si usa SVG/background-image) */
 #hobbies .carousel-control-prev-icon,
 #hobbies .carousel-control-next-icon {
-    /* Esto cambia el color si el icono es un SVG codificado en background-image. 
-       Reemplaza el código hexadecimal del color (gris oscuro por defecto) por uno claro. 
-       El color 'rgba(0, 0, 0, .4)' es un gris oscuro. Lo cambiamos a un gris muy claro. */
+    
     filter: invert(1) grayscale(1) brightness(0.7) opacity(0.7);
 }
 
-/* 2. O, si los iconos son fuentes o texto, cambia su color */
 #hobbies .carousel-control-prev,
 #hobbies .carousel-control-next {
-    opacity: 0.5; /* Hace que el control completo sea tenue */
-    color: rgba(0, 0, 0, 0.4); /* Color tenue para el icono (si es texto) */
+    opacity: 0.5; 
+    color: rgba(0, 0, 0, 0.4); 
 }
 
-/* Opcional: Ajustar el fondo del botón de control si existe */
+
 #hobbies .carousel-control-prev:hover,
 #hobbies .carousel-control-next:hover {
-    opacity: 0.8; /* Se vuelve un poco más visible al pasar el ratón */
+    opacity: 0.8; 
 }
-/* --- Table Styles --- */
+/* --- Table  --- */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -341,7 +313,7 @@ table tbody tr:hover {
     background-color: rgba(0, 0, 0, 0.05) !important;
 }
 
-/* --- HEROES Section Banner Customization --- */
+/* ---  Banner --- */
 #heroes .p-5 {
     background: #D8C4B8 !important;
     color: rgba(0, 0, 0, 0.7) !important;
@@ -358,9 +330,10 @@ table tbody tr:hover {
     color: #fff !important;
 }
 
-/* --- SCHEDULE Specific Styles (For the new functionality) --- */
+
 #schedule-table .table-success {
-    /* Style for completed rows */
+
     background-color: rgba(186, 237, 218, 0.5) !important;
     transition: background-color 0.3s ease;
+
 }
