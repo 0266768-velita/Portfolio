@@ -1,6 +1,4 @@
-/* ====================================== 
- * STYLE: HOTEL MINIMALIST THIN & DYNAMIC
- * ====================================== */
+
 * {
     margin: 0;
     padding: 0;
@@ -8,11 +6,10 @@
 }
 
 body {
-    /* Nueva Tipografía delgada: Lato o Montserrat con peso 300 */
+  
     font-family: 'Lato', 'Montserrat', sans-serif;
-    font-weight: 300; /* Peso de fuente delgado para el cuerpo */
-    
-    /* Deep Black Background */
+    font-weight: 300; 
+
     background-color: #0c0c0c; 
     color: #f0f0f0; 
     line-height: 1.7;
@@ -25,25 +22,21 @@ main {
     padding: 30px 20px;
 }
 
-/* ====================================== 
- * TÍTULO PRINCIPAL (h2) - AHORA DELGADO
- * ====================================== */
+
 h2 {
-    /* Usa la misma fuente limpia y delgada */
+    
     font-family: 'Lato', 'Montserrat', sans-serif; 
-    font-size: 3rem; /* Ligeramente más pequeño */
+    font-size: 3rem; 
     text-align: center;
     margin-bottom: 50px;
     color: #d4d4d4; 
     text-shadow: 0 0 5px rgba(255, 255, 255, 0.05); 
-    letter-spacing: 6px; /* Aún más espaciado para un look premium */
-    font-weight: 400; /* Delgado pero visible */
+    letter-spacing: 6px; 
+    font-weight: 400;
     text-transform: uppercase;
 }
 
-/* ====================================== 
- * NAVEGACIÓN (ANCHORS)
- * ====================================== */
+/*  NAV*/
 nav a {
     text-decoration: none;
     color: #a0a0a0; 
@@ -54,7 +47,7 @@ nav a {
     transition: all 0.3s ease; 
     text-transform: uppercase;
     font-size: 0.75rem; 
-    letter-spacing: 2.5px; /* Más espaciado */
+    letter-spacing: 2.5px; 
     box-shadow: 0 1px 3px rgba(0,0,0,0.5); 
 }
 nav a:hover {
@@ -65,9 +58,7 @@ nav a:hover {
     box-shadow: 0 4px 10px rgba(0,0,0,0.7);
 }
 
-/* ====================================== 
- * CARD STYLES (.custom-card)
- * ====================================== */
+/*   CARD STYLES (.custom-card)*/
 .custom-card {
     background-color: #151515 !important; 
     border: 1px solid #333333 !important; 
@@ -84,16 +75,16 @@ nav a:hover {
     border-left-color: #f0f0f0 !important; 
 }
 
-/* TÍTULO DE LA TARJETA (h3.card-title) - AHORA DELGADO */
+
 .custom-card h3.card-title {
-    font-family: 'Lato', 'Montserrat', sans-serif; /* Usa la fuente delgada */
-    font-size: 1.8rem; /* Más pequeño y refinado */
-    color: #f0f0f0; /* Color blanco puro para destacar */
-    font-weight: 500; /* Suficientemente grueso para ser título, pero minimalista */
+    font-family: 'Lato', 'Montserrat', sans-serif; 
+    font-size: 1.8rem; 
+    color: #f0f0f0;
+    font-weight: 500; 
     margin-bottom: 30px;
     text-align: left; 
-    letter-spacing: 3px; /* Espaciado premium */
-    text-transform: uppercase; /* Para un look minimalista de hotel */
+    letter-spacing: 3px; 
+    text-transform: uppercase; 
     border-bottom: 1px solid #222222; 
     padding-bottom: 15px;
 }
@@ -104,7 +95,7 @@ nav a:hover {
     font-weight: 300; 
 }
 
-/* --- Images and Flag --- */
+/* Images and Flag  */
 .spot-image {
     width: 350px; 
     height: 200px; 
@@ -129,9 +120,7 @@ nav a:hover {
     box-shadow: 0 1px 5px rgba(0,0,0,0.5);
 }
 
-/* ====================================== 
- * INFO LABELS (.custom-info-item)
- * ====================================== */
+/*  LABELS */
 .custom-info-item {
     background-color: #222222;
     border: 1px solid #3a3a3a;
@@ -162,7 +151,7 @@ nav a:hover {
 }
 
 
-/* --- Back to Main Page Link --- */
+
 main a[href="index.html"] {
     display: block; 
     width: fit-content;
@@ -184,7 +173,7 @@ main a[href="index.html"]:hover {
     border-color: #d4d4d4;
 }
 
-/* --- Media Queries for mobile --- */
+
 @media (max-width: 768px) {
     h2 {
         font-size: 2.5rem;
@@ -201,4 +190,5 @@ main a[href="index.html"]:hover {
         width: 100%;
         height: auto;
     }
+
 }
