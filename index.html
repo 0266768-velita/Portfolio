@@ -321,30 +321,29 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
-        // LOGIC: Mark Schedule Activity as Complete and show Toast
+       
         document.querySelectorAll('.mark-complete').forEach(button => {
             button.addEventListener('click', function() {
                 const row = this.closest('tr');
                 const statusCell = row.querySelector('.status-cell');
                 
-                // 1. Update Status and Style
+               
                 row.dataset.status = 'Completed';
                 statusCell.textContent = 'Completed';
-                row.classList.add('table-success'); // Bootstrap color for completed row
-
-                // 2. Disable the button
+                row.classList.add('table-success'); 
+                
                 this.disabled = true;
                 this.textContent = 'Done';
                 this.classList.replace('btn-success', 'btn-secondary');
 
-                // 3. Show Toast notification
+              
                 const scheduleToastEl = document.getElementById('scheduleToast');
                 const scheduleToast = new bootstrap.Toast(scheduleToastEl);
                 scheduleToast.show();
             });
         });
 
-        // LOGIC: Fade-In Animation on Scroll
+        
         const fadeInElements = document.querySelectorAll('.fade-in');
 
         const observer = new IntersectionObserver((entries) => {
@@ -362,11 +361,11 @@
             observer.observe(element);
         });
 
-        // LOGIC: Smooth Scroll for internal links
+        
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                // Usamos behavior: 'smooth' para el desplazamiento suave
+               
                 document.querySelector(this.getAttribute('href')).scrollIntoView({
                     behavior: 'smooth'
                 });
@@ -375,4 +374,5 @@
     </script>
     
 </body>
+
 </html>
